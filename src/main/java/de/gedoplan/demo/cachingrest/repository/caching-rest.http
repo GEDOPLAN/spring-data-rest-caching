@@ -1,0 +1,33 @@
+### GET request to example server
+GET http://localhost:8080/crud/user/5
+
+### GET more
+GET http://localhost:8080/crud/user/11
+
+### DELET request to example server
+DELETE http://localhost:8080/crud/user/5
+
+### GET request to example server
+GET http://localhost:8080/crud/user
+
+###
+GET http://localhost:8080/user/avgAge
+###
+PUT http://localhost:8080/crud/user/5
+Content-Type: application/json
+
+{
+  "username": "user4",
+  "email": "user4@example.com",
+  "password": "password4",
+  "firstName": "First4",
+  "lastName": "Last4",
+  "age": 11,
+  "phoneNumber": "+492046824845",
+  "address": {
+    "street": "Main St",
+    "streetNumber": 8,
+    "zipcode": "33739",
+    "city": "Bielefeld"
+  }
+}
